@@ -11,71 +11,94 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
   background: #fefeff;
 }
 
+.viie {
+}
+
+backgroundImage {
+  height: 70%;
+  opacity: 80%;
+}
+
 .box {
+  margin: 35px;
   position: relative;
   width: 380px;
-  height: 420px;
+  height: 550px;
   background: #ffffff;
   /* Box Border and Shadow */
   box-shadow: 1px -1px 3px black;
-  border-radius: 8px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
-
-.box::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 380px;
-  height: 420px;
-  background: linear-gradient(0deg, transparent, #f3c54e, #f3c54e);
-  transform-origin: bottom right;
-  animation: animate 5s linear infinite;
-}
-
-.box::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 380px;
-  height: 420px;
-  background: linear-gradient(0deg, transparent, #f3c54e, #f3c54e);
-  transform-origin: bottom right;
-  animation: animate 5s linear infinite;
-  animation-delay: -3s;
-}
-
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .form {
-  position: absolute;
-  inset: 2px;
   border-radius: 1px;
   background: #fefeff;
   z-index: 10;
-  padding: 50px 40px;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
 }
 
-.form h2 {
-  color: #45f3ff;
-  font-weight: 500;
+img {
+  opacity: 10%;
+  padding: 40px 30px;
+  height: 450px;
+}
+
+.banner {
+  background-color: #6b0707;
+  width: 1440px;
+  height: 44px;
+}
+
+.form h1 {
+  position: relative;
   text-align: center;
-  letter-spacing: 0.1rem;
+}
+
+.inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+
+.inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #23242a;
+  font-size: 1em;
+}
+
+.inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #23242a;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.links {
+  display: flex;
+}
+
+.links a {
+  margin: 10px 0;
+  font-size: 0.75em;
+}
+
+.input {
+  border: 1px solid Black;
 }

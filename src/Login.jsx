@@ -1,28 +1,37 @@
-import React from 'react'
+import React from 'react';
+import viie from './VIIE.png';
 
 function login() {
   return (
     <div className='box'>
+       <div className='banner'>
+        <br />
+        <img src={viie} alt="VIIE LOGO"/>
+      </div>
+    
       <div className='form'>
-        <h2>Log In</h2>
+        <h1>Login</h1>
+        <br />
+
         <div className='inputBox'>
-          <input type="text" required="required" />
-          <span>Username</span>
+          <span>E-MAIL</span>
+          <br />
           <i></i>
+          <input type="text" required="required" />
         </div>
 
         <div className='inputBox'>
-          <input type="text" required="required" />
           <span>Password</span>
+          <br />
           <i></i>
+          <input type="text" required="required" />
         </div>
 
         <div className='links'>
           <a href="#">Forgot Password</a>
-          <a href="#">Sign Up</a>
         </div>
-
-        <input type="submit" value="Login" />
+       <input type="submit" value="Sign In" style={{ backgroundColor: '#6b0707', padding: '10px 20px', color: 'white', borderRadius: '5px', border: 'none', fontWeight: 'bold' }} />
+        
       </div>
       </div>
   )
