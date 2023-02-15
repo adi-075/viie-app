@@ -1,10 +1,10 @@
 import React from 'react'
-import VIIE from './assets/VIIE.png';
+import VIIE from '../assets/VIIE.png';
 
 const Signup = () => (
   <div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')] bg-no-repeat bg-cover " >
     <div className='min-h-screen flex flex-col justify-center'>
-      <div className="max-w-md w-full mx-auto mt-4 bg-slate-100 p-8 border border-gray-300 shadow-2xl">
+      <div className="max-w-md w-full mx-auto bg-slate-100 p-8 border border-gray-300 shadow-2xl">
         <div className='max-w-md w-12 mx-auto'>
           <img src={VIIE} alt="VIIE logo" />
         </div>
