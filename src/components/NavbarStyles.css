@@ -1,7 +1,13 @@
 header {
   width: 100%;
   height: 70px;
-  background-color: var(--darkgrey);
+  background: linear-gradient(
+    to right,
+    #440000 0,
+    #440000 31%,
+    #761b1b 76%,
+    #210000 100%
+  );
 }
 
 header .navbar {
