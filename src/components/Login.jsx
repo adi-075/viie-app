@@ -1,13 +1,13 @@
 import React from "react";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import VIIE from "../assets/VIIE.png";
 
-function testing() {
+function login() {
   return (
     <>
-      <div class="w-full h-full bg-[url('https://cdn.dribbble.com/users/1695232/screenshots/16242925/media/053cbdbf91f70e46d804cd3aed3bc00f.png?compress=1&resize=800x600&vertical=top')] bg-no-repeat bg-cover ">
+      <div class="w-full h-full bg-[url('audi.png')] bg-no-repeat bg-cover ">
         <div className="min-h-screen flex flex-col justify-center">
-          <div className="max-w-md w-full mx-auto my-auto bg-slate-100 p-8 border border-gray-300 shadow-2xl">
+          <div className="max-w-md w-full mx-auto my-auto bg-slate-100 p-8 border border-gray-300 shadow-xl">
             <div className="max-w-md w-12 mx-auto">
               <img src={VIIE} alt="VIIE logo" />
             </div>
@@ -65,21 +65,23 @@ function testing() {
                 </div>
               </div>
               <div>
-                {/* <button className='w-full py-2 px-4 bg-red-800 hover:bg-red-900 rounded-md text-white text-sm'>Submit</button>  */}
-                <Button
+                <button className="w-full py-2 px-4 bg-red-800 hover:bg-red-900 rounded-md text-white text-sm font-semibold">
+                  Login
+                </button>
+                {/* <Button
                   className="w-full py-2 px-4"
                   variant="contained"
                 >
                   LOGIN
-                </Button>
+                </Button> */}
               </div>
               <div>
-                <u><a 
+                <a
                   href="/Sign-up"
-                  class="font-semibold text-base text-black-500 hover:text-blue-700"
+                  class="text-sm text-black-500 hover:text-blue-700"
                 >
                   Not a Member? Register Now
-                </a></u>
+                </a>
               </div>
             </form>
           </div>
@@ -89,4 +91,4 @@ function testing() {
   );
 }
 
-export default testing;
+export default login;
