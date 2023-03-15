@@ -12,9 +12,15 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Sign-Up" element={<Signup />} />
-        {/* Route to Signup component which includes navbar and footer */}
       </Routes>
     </>
+    // <div className="App">
+    //   <Navbar />
+    //   <div className="content">
+    //     <Home />
+    //     <Login />
+    //   </div>
+    // </div>
   );
 }
 
