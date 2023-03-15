@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import VIIE from "../assets/VIIE.png";
 import "./NavbarStyles.css";
+import "../index.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   return (
     <header>
-      <nav className="navbar">
+      <nav class="navbar">
         <div className="logo">
           <Link to="/">
             <img src={VIIE} alt="VIIE LOGO" />
@@ -32,7 +33,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <Link to="/Contact" className="nav-link">
               Contact
             </Link>
           </li>
