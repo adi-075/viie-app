@@ -5,6 +5,8 @@ import Signup from "./routes/Signup";
 import Contact from "./routes/Contact";
 import { Routes, Route } from "react-router-dom";
 
+import "./App.css";
+
 // import Register from "./Register";
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Sign-Up" element={<Signup />} />
-        <Route path="/Contact" element = {<Contact/>}/>
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
     </>
     // <div className="App">
