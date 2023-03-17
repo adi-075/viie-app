@@ -1,6 +1,11 @@
 .footer {
   width: 100%;
   background-color: var(--darkgrey);
+  /* position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 60px; */
 }
 
 .footer h6,
