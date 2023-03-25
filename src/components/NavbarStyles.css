@@ -36,12 +36,16 @@ header .logo img {
   position: absolute;
   top: 2rem;
   right: 1rem;
+  z-index: 1000;
+  transform: translateZ(1000px);
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   justify-self: start;
+  z-index: 1000;
+  transform: translateZ(1000px);
 }
 
 .nav-item {
