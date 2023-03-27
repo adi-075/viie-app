@@ -3,7 +3,6 @@ import ci from "../assets/ContactImg.jpg";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
-import Footer from "./Footer";
 
 const Contact = () => {
   return (
@@ -11,17 +10,18 @@ const Contact = () => {
       <div
         style={{
           backgroundImage: "url(" + ci + ")",
-          height: "25vh",
+          height: "22vh",
           textAlign: "center",
           justifyContent: "center",
         }}
       >
         <div>
-          <h1 className="text-white font-light text-center text-5xl relative top-24">
+          <h1 className="text-white font-serif text-center text-7xl relative top-24">
             Contact Us
           </h1>
         </div>
       </div>
+
       <div className="flex flex-col md:flex-row relative lg:top-48">
         {/* making the parent div as flex */}
         <div className="mx-auto max-w-sm rounded overflow-hidden shadow-2xl">
@@ -70,9 +70,6 @@ const Contact = () => {
       </div>
       <br />
       <br />
-      <div className="relative lg:top-96">
-        <Footer />
-      </div>
     </div>
   );
 };

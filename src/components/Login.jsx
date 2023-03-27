@@ -5,7 +5,7 @@ import VIIE from "../assets/VIIE.png";
 function login() {
   return (
     <>
-      <div class="w-full h-full bg-[url('audi.png')] bg-no-repeat bg-cover ">
+      <div class="w-full h-full bg-[url('audi.png')] bg-no-repeat bg-cover">
         <div className="min-h-screen flex flex-col justify-center">
           <div className="max-w-md w-full mx-auto my-auto bg-slate-100 p-8 border border-gray-300 shadow-xl">
             <div className="max-w-md w-12 mx-auto">
