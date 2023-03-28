@@ -21,7 +21,7 @@ const Home = () => {
               controlsList="nodownload"
             ></video>
           </div>
-          <div className="min-w-screen min-h-max md:bg-[url('students.png')] bg-no-repeat bg-fixed bg-cover p-5 md:p-20">
+          <div className="min-w-screen min-h-max md:bg-[url('grid.png')] bg-no-repeat bg-fixed bg-cover p-5 md:p-20">
             <h1 className="text-3xl md:text-5xl text-[#6B0707] order-0 py-10 mx-auto sm:mx-20 font-bold">
               This is VIIE
             </h1>
