@@ -7,9 +7,9 @@ import redf from "../assets/frame-red.png";
 const Home = () => {
   return (
     <>
-      <div>
+      <div className="min-w-screen min-h-max bg-[url('grid.png')] bg-no-repeat bg-fixed bg-cover p-5 md:p-20">
         <div className="min-h-screen min-w-screen">
-          <div class="e-hosted-video" className="w-full h-full">
+          <div class="e-hosted-video" className="w-full h-full  ">
             <video
               width="1920"
               height="1080"
@@ -20,8 +20,6 @@ const Home = () => {
               muted="muted"
               controlsList="nodownload"
             ></video>
-          </div>
-          <div className="min-w-screen min-h-max md:bg-[url('grid.png')] bg-no-repeat bg-fixed bg-cover p-5 md:p-20">
             <h1 className="text-3xl md:text-5xl text-[#6B0707] order-0 py-10 mx-auto sm:mx-20 font-bold">
               This is VIIE
             </h1>
@@ -42,31 +40,34 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <section class="min-w-screen min-h-max hidden xl:block">
-            <img src={aff} alt="Affordable Education" />
-            <div class="top-right">
-              <h1 class="min-w-screen hidden xl:block absolute xl:top-[1500px] xl:left-[1000px] text-left text-6xl font-bold text-red-900">
-                Affordable
-                <br />
-                International
-                <br />
-                Education
-                <br />
-                <h3 className="py-2 text-lg text-gray-800">
-                  Take your education to new heights and explore the world with
-                  our affordable international education program.
-                </h3>
-                <button className="bg-white rounded-md text-red-900 border border-red-900 text-xl py-2 px-3">
-                  Learn More
-                </button>
-              </h1>
-            </div>
-          </section>
-          <div className="min-w-screen">
-            <img src={redf} alt="Red-Frame" />
-          </div>
+        </div>
+      </div>
+      <section class="min-w-screen min-h-max hidden xl:block">
+        <img src={aff} alt="Affordable Education" />
+        <div class="top-right">
+          <h1 class="min-w-screen hidden xl:block absolute xl:top-[1500px] xl:left-[1000px] text-left text-6xl font-bold text-red-900">
+            Affordable
+            <br />
+            International
+            <br />
+            Education
+            <br />
+            <h3 className="py-2 mr-10 text-lg text-gray-800">
+              Take your education to new heights and explore the world with our
+              <br />
+              affordable international education program.
+            </h3>
+            <button className="bg-white rounded-md text-red-900 border border-red-900 text-xl py-2 px-3">
+              Learn More
+            </button>
+          </h1>
+        </div>
+      </section>
+      <div className="min-w-screen">
+        <img src={redf} alt="Red-Frame" />
+      </div>
 
-          {/* <div className="max-w-screen mx-auto flex flex-col sm:flex-row">
+      {/* <div className="max-w-screen mx-auto flex flex-col sm:flex-row">
             <div className="flex text-gray-500 text-center px-10 text-2xl sm:px-12">
               Vidyalankar has collaborated with top universities in the USA,
               CANADA, UK, Australia, and New Zealand and has developed some
@@ -86,8 +87,6 @@ const Home = () => {
               ></iframe>
             </div>
           </div> */}
-        </div>
-      </div>
     </>
   );
 };
